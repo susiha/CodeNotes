@@ -1,5 +1,6 @@
 package com.susiha.codenotes;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,8 +16,13 @@ public class DataUtils {
     public static List<String> creatStringListMode()
     {
 
+        ArrayList<String> stringData=new ArrayList<String>();
 
-        return null;
+        for (int i='A';i<'Z';i++)
+        {
+            stringData.add((char)i+"");
+        }
+        return stringData;
     }
 
 }

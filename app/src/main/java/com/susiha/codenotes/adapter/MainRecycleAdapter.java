@@ -3,6 +3,9 @@ package com.susiha.codenotes.adapter;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.susiha.codenotes.R;
 
 /**
  * Created by 苏斯哈 on 2016/10/21.
@@ -32,8 +35,10 @@ public class MainRecycleAdapter extends RecyclerView.Adapter<MainRecycleAdapter.
     public class MainRecycleViewHolder extends RecyclerView.ViewHolder
     {
 
+        TextView item_tv;
         public MainRecycleViewHolder(View itemView) {
             super(itemView);
+            item_tv=(TextView)itemView.findViewById(R.id.item);
         }
     }
 
